@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useAuthContext } from "contexts";
-import { Images, ROUTES } from "constants";
+import { Images, images, ROUTES } from "constants";
 
 const Header = () => {
   const {
@@ -56,7 +56,7 @@ const Header = () => {
                 aria-expanded="false"
               >
                 <img
-                  src="https://github.com/mdo.png"
+                  src={images["user_pic.jpg"]}
                   alt="mdo"
                   width="32"
                   height="32"
